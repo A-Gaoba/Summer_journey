@@ -146,22 +146,47 @@ function myFunction(a) {
 }
 console.log(myFunction(931));
 
+
 // It seems like something happened to these strings
 // Can you figure out how to clear up the chaos?
 // Write a function that joins these strings together such that they form the following words:
 // 'Javascript', 'Countryside', and 'Downtown'
 // You might want to apply basic JS string methods such as replace(), split(), slice() etc
+
 function myFunction(a, b) {
   word_b = b.replace(/%/, "").split("").reverse().join("");
   word_a = a.replace(/%/, "");
-  word = word_a.concat(word_a);
+  word_1a = word_a.charAt(0).toUpperCase() + word_a.slice(1);
+
+  word = word_1a.concat(word_b);
   return word;
 }
-console.log(myFunction("down", "nw%ot"));
+console.log(myFunction("c%ountry", "edis"));
 
-//let a = "java";
-// let filtered = a.split("").filter((elem) => {
-//   elem === a[0].toUpperCase ? elem : elem.toUpperCase;
-// });
+// This challenge is a little bit more complex
+// Write a function that takes a number (a) as argument
+// If a is prime, return a
+// If not, return the next higher prime number
+// function myFunction(a) {
 
-// console.log(filtered);
+function myFunction(a) {
+  for (let i = 2; i < a; i++) {
+    if (a % i === 0) {
+      return myFunction(a + 1);
+    }
+  }
+  return a;
+}
+console.log(myFunction(115));
+
+// Write a function that takes two numbers, say x and y, as arguments
+// Check if x is divisible by y
+// If yes, return x
+// If not, return the next higher natural number that is divisible by y
+function myFunction(x, y) {
+  while (x % y !== 0) {
+    x++;
+  }
+  return x;
+}
+console.log(myFunction(7, 3));
