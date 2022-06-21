@@ -59,3 +59,11 @@ let mixx = mix
   .filter((elem) => (!isNaN(parseInt(elem)) ? elem : ""))
   .map((elem) => elem * elem);
 console.log(mixx); //[1, 9, 4]
+
+//-----------------------------reduce----------------------------------------------
+//find long word in array
+arr = ["Abdulrahman", "Mohammed", "Ali", "Amr", "Rami", "Rahaf", "Asma"];
+let check = arr.reduce((acc, current) => {
+  return acc.length > current.length ? acc : current;
+});
+console.log(check);
