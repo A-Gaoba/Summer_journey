@@ -67,3 +67,8 @@ let check = arr.reduce((acc, current) => {
   return acc.length > current.length ? acc : current;
 });
 console.log(check);
+
+//remove
+let chars = ["E", "@", "&", "l", "z", "@", "e", "r", "@", "o"];
+let removeChar = chars.split("");
+console.log(removeChar);
