@@ -1,0 +1,15 @@
+.counter {
+  margin: 0 auto;
+  width: 300px;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+p {
+  background-color: aliceblue;
+  color: black;
+  margin: 50px;
+}
