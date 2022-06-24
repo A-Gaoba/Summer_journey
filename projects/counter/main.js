@@ -18,3 +18,7 @@ reset.addEventListener("click", function () {
   count = 0;
   counting.innerText = count;
 });
+
+function save() {
+  console.log(count);
+}
